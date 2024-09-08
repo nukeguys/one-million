@@ -1,0 +1,21 @@
+{
+  "name": "one-million",
+  "version": "1.0.0",
+  "description": "FrontEnd 강의 자료 코드",
+  "scripts": {
+    "start": "servor --reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nukeguys/one-million.git"
+  },
+  "author": "nukeguys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nukeguys/one-million/issues"
+  },
+  "homepage": "https://github.com/nukeguys/one-million#readme",
+  "devDependencies": {
+    "servor": "4.0.2"
+  }
+}
