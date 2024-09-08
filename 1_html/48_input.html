@@ -1,0 +1,87 @@
+<body>
+  <label for="name">Name: </label>
+  <input type="text" name="name" id="name" autofocus />
+  <hr />
+  <label for="pwd">Password: </label>
+  <input type="password" name="pwd" id="pwd" />
+  <hr />
+  <label for="hidden">hidden: </label>
+  <input type="hidden" name="secret" value="important" id="hidden" />
+  사용자에게 보여지지 않음
+  <hr />
+  <label for="search">search: </label>
+  <input
+    type="search"
+    name="search"
+    id="search"
+    placeholder="검색어를 입력하세요."
+  />
+  <hr />
+  <label for="url">url: </label>
+  <input type="url" name="url" id="url" />
+  <hr />
+  <label for="tel">tel: </label>
+  <input type="tel" name="tel" id="tel" />
+  <hr />
+  <label for="email">email: </label>
+  <input type="email" name="email" id="email" />
+  <hr />
+  <label for="number">number: </label>
+  <input
+    type="number"
+    name="count"
+    id="number"
+    min="2"
+    max="10"
+    step="2"
+    value="2"
+  />
+  <hr />
+  <input type="range" name="range" min="0" max="10" step="2" value="5" />
+  <hr />
+  <input
+    type="checkbox"
+    name="agree"
+    id="agree"
+    value="agree"
+  />동의(필수)<br />
+  <hr />
+  <input type="radio" name="gender" value="male" checked />남<br />
+  <input type="radio" name="gender" value="female" />여<br />
+  <hr />
+  <input type="color" name="color" value="#ff22ff" />
+  <hr />
+  <input type="file" name="file" accept="image/*;capture=camera" />
+  <hr />
+  <label for="datetime-local">datetime-local: </label>
+  <input type="datetime-local" name="datetime-local" id="datetime-local" />
+  <hr />
+  <label for="month">month: </label>
+  <input type="month" name="month" id="month" />
+  <hr />
+  <label for="time">time: </label>
+  <input type="time" name="time" id="time" />
+  <hr />
+  <label for="week">week: </label>
+  <input type="week" name="week" id="week" />
+  <hr />
+  <label for="date">date: </label>
+  <input type="date" name="date" id="date" />
+  <hr />
+  <label for="datetime">datetime: </label>
+  <input type="datetime" name="datetime" id="datetime" />
+  <hr />
+  <input type="submit" value="제출" />
+  <hr />
+  <input
+    type="image"
+    src="../images/logo.jpeg"
+    alt="submit"
+    width="48"
+    height="48"
+  />
+  <hr />
+  <input type="reset" value="초기화" />
+  <hr />
+  <input type="button" value="버튼" onclick="alert('버튼 클릭!')" />
+</body>

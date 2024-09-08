@@ -1,0 +1,11 @@
+<template id="my-template">
+  <div class="item">
+    <h2>템플릿 제목</h2>
+    <p>이것은 템플릿 내용입니다.</p>
+  </div>
+</template>
+<script>
+  const template = document.getElementById("my-template");
+  const clone = template.content.cloneNode(true);
+  document.body.appendChild(clone);
+</script>
