@@ -1,0 +1,40 @@
+<head>
+  <style>
+    div {
+      position: absolute;
+      background-color: salmon;
+      padding: 5px;
+    }
+    .move {
+      animation: move 2s infinite;
+    }
+    .scale {
+      left: 50px;
+      top: 50px;
+      animation: scale 2s infinite;
+    }
+    @keyframes move {
+      from {
+        left: 0;
+      }
+      to {
+        left: 500px;
+      }
+    }
+    @keyframes scale {
+      0% {
+        transform: scale(0);
+      }
+      30% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="move">move</div>
+  <div class="scale">move</div>
+</body>

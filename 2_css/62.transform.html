@@ -1,0 +1,31 @@
+<head>
+  <style>
+    div {
+      width: 150px;
+      height: 150px;
+      background-color: cadetblue;
+      border: 1px solid black;
+      color: white;
+      position: absolute;
+    }
+    .translate {
+      transform: translate(100px, 100px);
+    }
+    .scale {
+      transform: translate(300px, 300px) scale(2, 1.5);
+    }
+    .rotate {
+      transform: translate(300px, 50px) rotate(45deg);
+    }
+    .skew {
+      transform: translate(500px, 50px) skew(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div>default</div>
+  <div class="translate">translate(100px, 100px)</div>
+  <div class="scale">transform: translate(300px, 300px) scale(2, 1.5)</div>
+  <div class="rotate">translate(300px, 50px) rotate(45deg)</div>
+  <div class="skew">translate(500px, 50px) skew(45deg)</div>
+</body>

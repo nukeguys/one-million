@@ -1,0 +1,38 @@
+<head>
+  <style>
+    div {
+      position: absolute;
+      background-color: salmon;
+      padding: 5px;
+    }
+    .move {
+      animation: move 2s infinite;
+    }
+    .move-r {
+      top: 50px;
+      animation: move 2s infinite reverse;
+    }
+    .alt {
+      top: 100px;
+      animation: move 2s infinite alternate;
+    }
+    .alt-r {
+      top: 150px;
+      animation: move 2s infinite alternate-reverse;
+    }
+    @keyframes move {
+      from {
+        left: 0;
+      }
+      to {
+        left: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="move">normal</div>
+  <div class="move-r">reverse</div>
+  <div class="alt">alternate</div>
+  <div class="alt-r">alternate-reverse</div>
+</body>

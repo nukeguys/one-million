@@ -1,0 +1,27 @@
+<head>
+  <style>
+    body {
+      border: 1px solid black;
+    }
+    p {
+      padding: 10px;
+      background-color: #5eab5870;
+    }
+    span {
+      background-color: yellow;
+      font-size: 20px;
+      padding: 20px;
+      line-height: 40px;
+      /* 영향 없음 */
+      width: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    display:inline은 <span>같은 라인</span>에 표시<br />
+    이렇게 겹침 현상도 발생합니다.
+  </p>
+  <p><span>span</span><button>button</button><strong>strong</strong></p>
+</body>

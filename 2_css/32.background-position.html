@@ -1,0 +1,51 @@
+<head>
+  <style>
+    div {
+      background-color: cadetblue;
+      background-image: url("../resources/images/1mlz-logo.png");
+      width: 300px;
+      height: 200px;
+      display: inline-block;
+      margin: 10px;
+      background-repeat: no-repeat;
+    }
+    span {
+      font-size: 20px;
+      background-color: blanchedalmond;
+    }
+    div:nth-of-type(1) {
+      background-position: 30px;
+    }
+    div:nth-of-type(2) {
+      background-position: top;
+    }
+    div:nth-of-type(3) {
+      background-position: left;
+    }
+    div:nth-of-type(4) {
+      background-position: right;
+    }
+    div:nth-of-type(5) {
+      background-position: bottom;
+    }
+    div:nth-of-type(6) {
+      background-position: 50% 50%;
+    }
+    div:nth-of-type(7) {
+      background-position: left 30px top;
+    }
+    div:nth-of-type(8) {
+      background-position: left 20px bottom 20px;
+    }
+  </style>
+</head>
+<body>
+  <div><span>30px</span></div>
+  <div><span>top</span></div>
+  <div><span>left</span></div>
+  <div><span>right</span></div>
+  <div><span>bottom</span></div>
+  <div><span>50% 50%</span></div>
+  <div><span>left 30px top</span></div>
+  <div><span>left 20px bottom 20px</span></div>
+</body>

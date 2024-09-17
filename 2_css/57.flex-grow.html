@@ -1,0 +1,48 @@
+<head>
+  <style>
+    section {
+      display: flex;
+      background-color: lightslategrey;
+      padding: 5px;
+    }
+    div {
+      border: 1px solid black;
+      background-color: bisque;
+      font-size: 20px;
+      line-height: 50px;
+      width: 150px;
+    }
+    .grow div:nth-child(1) {
+      flex-grow: 0;
+    }
+    .grow div:nth-child(2) {
+      flex-grow: 1;
+    }
+    .grow div:nth-child(3) {
+      flex-grow: 3;
+    }
+    .grow div:nth-child(4) {
+      flex-grow: 3;
+    }
+    .grow div:nth-child(5) {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div>flex-grow: 0</div>
+    <div>flex-grow: 0</div>
+    <div>flex-grow: 0</div>
+    <div>flex-grow: 0</div>
+    <div>flex-grow: 0</div>
+  </section>
+  <hr />
+  <section class="grow">
+    <div>flex-grow: 0</div>
+    <div>flex-grow: 1</div>
+    <div>flex-grow: 3</div>
+    <div>flex-grow: 3</div>
+    <div>flex-grow: 1</div>
+  </section>
+</body>

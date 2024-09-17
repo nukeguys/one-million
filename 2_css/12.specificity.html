@@ -1,0 +1,42 @@
+<head>
+  <style>
+    /* 1. specificity: 1-0-1 */
+    #outer li {
+      background-color: red;
+    }
+
+    /* 2. specificity: 2-0-1 */
+    #outer #inner li {
+      background-color: blue;
+    }
+
+    /* 3. specificity: 1-1-3 */
+    #outer div ul li.nav {
+      background-color: yellow;
+    }
+
+    /* 4. specificity: 1-0-1-1 */
+    li:nth-child(2) {
+      background-color: cadetblue !important;
+    }
+
+    li {
+      list-style-type: none;
+      font-size: 20px;
+      text-align: center;
+      width: 200px;
+      margin-bottom: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="outer" class="container">
+    <div id="inner" class="container">
+      <ul>
+        <li class="nav">#outer #inner li</li>
+        <li class="nav">li:nth-child(2)</li>
+      </ul>
+    </div>
+  </div>
+</body>

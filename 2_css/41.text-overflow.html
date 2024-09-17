@@ -1,0 +1,21 @@
+<head>
+  <style>
+    p {
+      padding: 10px;
+      width: 200px;
+      border: 1px solid black;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    p:nth-of-type(1) {
+      text-overflow: clip;
+    }
+    p:nth-of-type(2) {
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <p>clip - 넘친 텍스트는 표시하지 않습니다.</p>
+  <p>ellipsis - 넘친 텍스트는 말줄임표를 표시합니다.</p>
+</body>

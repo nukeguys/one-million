@@ -1,0 +1,44 @@
+<head>
+  <style>
+    div {
+      width: 300px;
+      background-color: cadetblue;
+      border: 1px solid black;
+      color: white;
+      margin: 10px;
+    }
+    .size:hover {
+      transition: width 2s ease-in-out;
+      width: 100%;
+    }
+    .position:hover {
+      transition: transform 2s ease-in-out;
+      transform: translate(200%, 200%);
+    }
+    .border:hover {
+      transition: border-radius 1s ease-in-out 1s, background-color 1s ease-in;
+      border-radius: 20px;
+      background-color: burlywood;
+    }
+    .rotate:hover {
+      transition: transform 1s ease-in-out;
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="size">transition: width 2s ease-in-out;<br />width: 100%;</div>
+  <div class="position">
+    transition: transform 2s ease-in-out;<br />
+    transform: translateX(200%, 200%);
+  </div>
+  <div class="border">
+    transition: border-radius 1s ease-in-out 1s, background-color 1s ease-in;<br />
+    border-radius: 50%;<br />
+    background-color: burlywood;
+  </div>
+  <div class="rotate">
+    transition: transform 1s ease-in-out;<br />
+    transform: rotate(360deg);
+  </div>
+</body>

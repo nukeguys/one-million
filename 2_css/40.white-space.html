@@ -1,0 +1,36 @@
+<head>
+  <style>
+    p {
+      padding: 10px;
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+    }
+    p:nth-of-type(1) {
+      white-space: normal;
+    }
+    p:nth-of-type(2) {
+      white-space: nowrap;
+    }
+    p:nth-of-type(3) {
+      white-space: pre;
+    }
+    p:nth-of-type(4) {
+      white-space: pre-wrap;
+    }
+    p:nth-of-type(5) {
+      white-space: pre-line;
+    }
+    p:nth-of-type(6) {
+      white-space: break-spaces;
+    }
+  </style>
+</head>
+<body>
+  <p>normal - 공백과 개행문자를 병합하고 자동 줄바꿈이 일어납니다.</p>
+  <p>nowrap -공백과 개행문자를 병합하고 자동 줄바꿈은 일어나지 않습니다.</p>
+  <p>pre - 공백과 개행문자를 병합하지 않고 자동 줄바꿈도 일어나지 않습니다.</p>
+  <p>pre-wrap - 공백과 개행문자를 병합하지 않고 자동 줄바꿈이 일어납니다.</p>
+  <p>pre-line - 공백만 병합하고 자동 줄바꿈이 일어납니다.</p>
+  <p>break-spaces - pre-wrap과 동일하고 줄끝의 공백에서 줄바꿈이 일어납니다.</p>
+</body>

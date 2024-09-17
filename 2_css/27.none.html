@@ -1,0 +1,35 @@
+<head>
+  <style>
+    body {
+      border: 1px solid black;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      background-color: bisque;
+      height: 40px;
+    }
+    #none li:nth-child(2) {
+      display: none;
+    }
+
+    #hidden li:nth-child(2) {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <ul id="none">
+    <li>1 - display:none</li>
+    <li>2 - display:none</li>
+    <li>3 - display:none</li>
+  </ul>
+  <hr />
+  <ul id="hidden">
+    <li>1 - visibility: hidden</li>
+    <li>2 - visibility: hidden</li>
+    <li>3 - visibility: hidden</li>
+  </ul>
+</body>

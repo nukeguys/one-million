@@ -1,0 +1,38 @@
+<head>
+  <style>
+    div {
+      position: absolute;
+      background-color: salmon;
+      padding: 5px;
+    }
+    .none {
+      animation: move 2s 1s 1 none;
+    }
+    .forwards {
+      top: 50px;
+      animation: move 2s 1s 1 forwards;
+    }
+    .backwards {
+      top: 100px;
+      animation: move 2s 1s 1 backwards;
+    }
+    .both {
+      top: 150px;
+      animation: move 2s 1s 1 both;
+    }
+    @keyframes move {
+      from {
+        left: 100px;
+      }
+      to {
+        left: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="none">none</div>
+  <div class="forwards">forwards</div>
+  <div class="backwards">backwards</div>
+  <div class="both">both</div>
+</body>

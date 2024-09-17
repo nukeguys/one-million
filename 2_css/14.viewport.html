@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        width: 25px;
+        height: 25px;
+      }
+      section {
+        width: 350px;
+        height: 500px;
+        border: 1px solid black;
+        position: relative;
+      }
+      div {
+        text-align: center;
+        writing-mode: vertical-lr;
+        position: absolute;
+        border: 2px solid red;
+        background-color: aliceblue;
+      }
+
+      #percent {
+        height: 100%;
+      }
+      #vw {
+        height: 100vw;
+        margin-left: 50px;
+      }
+      #vh {
+        height: 100vh;
+        margin-left: 100px;
+      }
+      #vmin {
+        height: 100vmin;
+        margin-left: 150px;
+      }
+      #vmax {
+        height: 100vmax;
+        margin-left: 200px;
+      }
+      #svh {
+        height: 100svh;
+        margin-left: 250px;
+      }
+      #lvh {
+        height: 100lvh;
+        margin-left: 300px;
+      }
+      #dvh {
+        height: 100dvh;
+        margin-left: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="percent">100%</div>
+      <div id="vw">100vw</div>
+      <div id="vh">100vh</div>
+      <div id="vmin">100vmin</div>
+      <div id="vmax">100vmax</div>
+      <div id="svh">100svh</div>
+      <div id="lvh">100lvh</div>
+      <div id="dvh">100dvh</div>
+    </section>
+  </body>
+</html>

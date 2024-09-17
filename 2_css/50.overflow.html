@@ -1,0 +1,28 @@
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 50px;
+      border: 1px solid black;
+      margin: 50px 50px;
+    }
+    .visible {
+      overflow: visible;
+    }
+    .hidden {
+      overflow: hidden;
+    }
+    .scroll {
+      overflow: scroll;
+    }
+    .auto {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="visible">visible<br />넘치는 내용을 그대로 표시합니다.</div>
+  <div class="hidden">hidden<br />넘치는 내용을 잘라서 안보이게 합니다.</div>
+  <div class="scroll">scroll<br />항상 스크롤을 표시합니다.</div>
+  <div class="auto">auto<br />넘치는 경우에만 스크롤을 표시합니다.</div>
+</body>

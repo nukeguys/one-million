@@ -1,0 +1,60 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      border: 1px solid black;
+      color: white;
+    }
+    div {
+      height: 200px;
+      width: 100%;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .mobile {
+      display: block;
+    }
+    .tablet,
+    .pc {
+      display: none;
+    }
+
+    @media (min-width: 376px) {
+      div {
+        width: 50%;
+        background-color: red;
+      }
+      .mobile,
+      .pc {
+        display: none;
+      }
+      .tablet {
+        display: block;
+      }
+    }
+    @media (min-width: 769px) {
+      div {
+        width: 40%;
+        background-color: green;
+      }
+      .mobile,
+      .tablet {
+        display: none;
+      }
+      .pc {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    Break Point: 375px, 768px
+    <span class="mobile">mobile</span>
+    <span class="tablet">tablet</span>
+    <span class="pc">pc</span>
+  </div>
+</body>

@@ -1,0 +1,45 @@
+<head>
+  <style>
+    div {
+      background-color: salmon;
+      padding: 5px;
+      width: 100px;
+      height: 100px;
+      margin: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rotate {
+      animation: rotate 1s infinite linear paused;
+    }
+    .rotate .play {
+      display: none;
+    }
+
+    .rotate:hover {
+      animation-play-state: running;
+    }
+    .rotate:hover .play {
+      display: inline;
+    }
+    .rotate:hover .paused {
+      display: none;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rotate">
+    <span class="play">play</span>
+    <span class="paused">paused</span>
+  </div>
+</body>

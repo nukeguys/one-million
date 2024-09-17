@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+      html {
+        font-size: 16px;
+      }
+      section {
+        font-size: 14px;
+      }
+      div {
+        text-align: center;
+        background-color: cadetblue;
+        margin-bottom: 10px;
+      }
+      section {
+        border: 1px solid black;
+        width: 900px;
+      }
+      #px {
+        font-size: 28px;
+        width: 840px;
+      }
+      #em {
+        font-size: 2em;
+        width: 30em;
+      }
+      #rem {
+        font-size: 2rem;
+        width: 30rem;
+      }
+      #percent {
+        font-size: 200%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>default (font-size: 14px, width: 900px)</div>
+      <div id="px">font-size: 28px, width: 840px</div>
+      <div id="em">font-size: 2em(14px*2=28px), width: 30em(28px*30=840px)</div>
+      <div id="rem">
+        font-size: 2rem(16px*2=32px), width: 30rem(16px*30=480px)
+      </div>
+      <div id="percent">font-size:200%(14px*2=28px), width: 100%(900px)</div>
+    </section>
+  </body>
+</html>

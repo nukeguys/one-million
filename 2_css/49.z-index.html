@@ -1,0 +1,31 @@
+<head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .default {
+      background-color: #ff0000c0;
+    }
+    .absolute {
+      position: absolute;
+    }
+    .two {
+      background-color: #00ff00c0;
+      left: 50px;
+      top: 50px;
+      z-index: 100;
+    }
+    .three {
+      background-color: #0000ffc0;
+      top: 100px;
+      left: 100px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="default">1 - default</div>
+  <div class="absolute two">2 - z-index: 100</div>
+  <div class="absolute three">3 - z-index: 10</div>
+</body>

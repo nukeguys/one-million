@@ -1,0 +1,31 @@
+<head>
+  <style>
+    section {
+      display: flex;
+      background-color: lightslategrey;
+      padding: 5px;
+    }
+    div {
+      width: 100px;
+      border: 1px solid black;
+      background-color: bisque;
+      font-size: 20px;
+      line-height: 50px;
+    }
+    .order-2 {
+      order: 2;
+    }
+    .order-min-1 {
+      order: -1;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div>1</div>
+    <div>2</div>
+    <div class="order-2">3. order: 2</div>
+    <div>4</div>
+    <div class="order-min-1">5. order: -1</div>
+  </section>
+</body>

@@ -1,0 +1,43 @@
+<head>
+  <style>
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: lightslategrey;
+      padding: 5px;
+      height: 100px;
+      align-items: center;
+    }
+    div {
+      width: 200px;
+      border: 1px solid black;
+      background-color: bisque;
+      font-size: 20px;
+    }
+    div:nth-child(1) {
+      align-self: auto;
+    }
+    div:nth-child(2) {
+      align-self: stretch;
+    }
+    div:nth-child(3) {
+      align-self: flex-start;
+    }
+    div:nth-child(4) {
+      align-self: flex-end;
+    }
+    div:nth-child(5) {
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>align-items: center</h2>
+  <section>
+    <div>align-self: auto</div>
+    <div>align-self: stretch</div>
+    <div>align-self: flex-start</div>
+    <div>align-self: flex-end</div>
+    <div>align-self: center</div>
+  </section>
+</body>
