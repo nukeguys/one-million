@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.addEventListener("beforeunload", e => {
+        console.log("beforeunload");
+        e.preventDefault();
+      });
+      window.addEventListener("unload", e => {
+        console.log("unload");
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOMContentLoaded");
+      });
+      window.addEventListener("load", () => {
+        console.log("load");
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="https://via.placeholder.com/200" alt="placeholder" />
+    </div>
+  </body>
+</html>

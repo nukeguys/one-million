@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <a class="google" href="https://www.google.com">Google</a>
+    <a class="naver" href="https://www.naver.com">Naver</a>
+    <script>
+      document.querySelector(".google").addEventListener("click", e => {
+        e.preventDefault();
+      });
+      document.querySelector(".naver").onclick = () => false;
+    </script>
+  </body>
+</html>

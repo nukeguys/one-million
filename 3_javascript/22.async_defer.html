@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script defer src="./big_defer.js"></script>
+    <!-- console.log("run big_defer.js") -->
+    <script defer src="./small_defer.js"></script>
+    <!-- console.log("run small_defer.js") -->
+    <script async src="./big_async.js"></script>
+    <!-- console.log("run big_async.js") -->
+    <script async src="./small_async.js"></script>
+    <!-- console.log("run small.js") -->
+    <script>
+      console.log("run script in head");
+      document.addEventListener("DOMContentLoaded", () =>
+        console.log("DOMContentLoaded")
+      );
+      window.addEventListener("load", () => console.log("load"));
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="https://via.placeholder.com/200" alt="placeholder" />
+    </div>
+    <script>
+      console.log("run script in body");
+    </script>
+  </body>
+</html>

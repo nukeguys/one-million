@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      console.log("run script in head");
+      // document.querySelector("div").addEventListener("click", () => {
+      //   console.log("click");
+      // });
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOMContentLoaded");
+
+        document.querySelector("div").addEventListener("click", () => {
+          console.log("click");
+        });
+
+        console.log(document.querySelector("img").getBoundingClientRect());
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="https://via.placeholder.com/200" alt="placeholder" />
+    </div>
+    <script>
+      console.log("run script in body");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer {
+        width: 200px;
+        height: 200px;
+        background-color: bisque;
+      }
+      .inner {
+        width: 100px;
+        height: 100px;
+        background-color: lightpink;
+      }
+      span {
+        position: absolute;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer" data-name="outer">
+      <span>class="outer"</span>
+      <div class="inner" data-name="inner">
+        <span>class="inner"</span>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".outer").addEventListener("click", e => {
+        console.log(e.currentTarget.dataset.name);
+        console.log(e.isTrusted); // // 스크립트로 발생시킨 이벤트는 false
+      });
+      document.querySelector(".inner").addEventListener("click", e => {
+        console.log(e.currentTarget.dataset.name);
+        e.preventDefault();
+      });
+
+      const event = new MouseEvent("click", {
+        bubbles: true, // 버블링
+        cancelable: true, // 기본동작 취소 가능
+      });
+      const notCancel = document.querySelector(".inner").dispatchEvent(event);
+      console.log(notCancel); // preventDefault가 호출되면 false
+    </script>
+  </body>
+</html>

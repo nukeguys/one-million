@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.onload = () => {
+        console.log("onload");
+        console.log(
+          document.querySelector(".validImg").getBoundingClientRect()
+        );
+      };
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOMContentLoaded");
+        console.log(
+          document.querySelector(".validImg").getBoundingClientRect()
+        );
+        document.querySelector(".validImg").addEventListener("load", () => {
+          console.log("validImg loaded");
+        });
+        document.querySelector(".errorImg").addEventListener("load", () => {
+          console.log("errorImg loaded");
+        });
+        document.querySelector(".errorImg").addEventListener("error", () => {
+          console.log("errorImg error");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <img
+        class="validImg"
+        src="https://via.placeholder.com/200"
+        alt="placeholder"
+      />
+      <img class="errorImg" src="https://error.png" />
+    </div>
+  </body>
+</html>

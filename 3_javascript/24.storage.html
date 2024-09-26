@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button>Welcome</button>
+    <script>
+      window.onstorage = event => {
+        if (event.key != "greet") return;
+        console.log(event.newValue + " from " + event.url);
+        window.setTimeout(() => {
+          localStorage.setItem("greet", "hi!");
+        }, 1000);
+      };
+      document.querySelector("button").onclick = () => {
+        localStorage.setItem("greet", "hello!");
+      };
+    </script>
+  </body>
+</html>

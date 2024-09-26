@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      console.log(document.readyState);
+      document.addEventListener("readystatechange", () =>
+        console.log(document.readyState)
+      );
+      window.addEventListener("beforeunload", e => console.log("beforeunload"));
+      window.addEventListener("unload", e => console.log("unload"));
+      document.addEventListener("DOMContentLoaded", () =>
+        console.log("DOMContentLoaded")
+      );
+      window.addEventListener("load", () => console.log("load"));
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="https://via.placeholder.com/200" alt="placeholder" />
+    </div>
+  </body>
+</html>

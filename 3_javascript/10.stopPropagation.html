@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer {
+        width: 200px;
+        height: 200px;
+        background-color: bisque;
+      }
+      .inner {
+        width: 100px;
+        height: 100px;
+        background-color: lightpink;
+      }
+      span {
+        position: absolute;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer" data-name="outer">
+      <span>class="outer"</span>
+      <div class="inner" data-name="inner">
+        <span>class="inner"</span>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".outer").addEventListener("click", e => {
+        console.log(e.currentTarget.dataset.name);
+      });
+      document.querySelector(".inner").addEventListener("click", e => {
+        e.stopPropagation();
+        console.log(e.currentTarget.dataset.name);
+      });
+    </script>
+  </body>
+</html>
