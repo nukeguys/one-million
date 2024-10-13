@@ -1,17 +1,13 @@
 <body>
-  <img src="../resources/images/svg.svg" alt="SVG" />
-  <!-- inline -->
-  <svg
-    version="1.1"
-    baseProfile="full"
-    width="300"
-    height="200"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect width="100%" height="100%" fill="black" />
-    <circle cx="150" cy="100" r="80" fill="white" />
-    <text x="150" y="125" font-size="60" text-anchor="middle" fill="black">
-      FE
-    </text>
-  </svg>
+  <form>
+    <fieldset>
+      <legend>사이즈 선택</legend>
+      <input type="radio" name="size" id="tall" value="tall" />
+      <label for="tall">Tall</label>
+      <input type="radio" name="size" id="grande" value="grande" />
+      <label for="grande">Grande</label>
+      <input type="radio" name="size" id="venti" value="venti" />
+      <label for="venti">Venti</label>
+    </fieldset>
+  </form>
 </body>
