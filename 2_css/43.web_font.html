@@ -1,31 +1,89 @@
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet"
   />
+
   <style>
     @font-face {
-      font-family: Pretendard Bold;
-      font-weight: 400;
-      src: local("Pretendard Bold"),
-        url(../resources/fonts/Pretendard/web/static/woff2/Pretendard-Bold.woff2)
-          format("woff2"),
-        url(../resources/fonts/Pretendard/web/static/woff/Pretendard-Bold.woff)
-          format("woff");
+      font-family: "Pretendard";
+      font-weight: 500;
+      font-display: swap;
+      src: local("Pretendard-Medium"),
+        url("../resources/fonts/Pretendard-Medium.woff2") format("woff2"),
+        url("../resources/fonts/Pretendard-Medium.woff") format("woff");
     }
+    @font-face {
+      font-family: "Pretendard";
+      font-weight: 600;
+      font-display: swap;
+      src: url("/resources/fonts/Pretendard-SemiBold.woff2") format("woff2"),
+        url("/resources/fonts/Pretendard-SemiBold.woff") format("woff");
+    }
+
+    @font-face {
+      font-family: "Pretendard Variable";
+      font-weight: 45 920;
+      font-style: normal;
+      font-display: swap;
+      src: url("/resources/fonts/PretendardVariable.woff2")
+        format("woff2-variations");
+    }
+
     body {
       font-size: 20px;
     }
-    p:nth-of-type(2) {
-      font-family: "Pretendard Bold";
+
+    .roboto {
+      font-family: "Roboto";
+      font-weight: 400;
     }
-    p:nth-of-type(3) {
-      font-family: Roboto;
+    .pretendard-medium {
+      font-family: "Pretendard";
+      font-weight: 500;
+    }
+    .pretendard-semibold {
+      font-family: "Pretendard";
+      font-weight: 600;
+    }
+    .pretendard-variable {
+      font-family: "Pretendard Variable";
+      font-weight: 100;
+    }
+
+    .h1 {
+      font-family: "Pretendard";
+      font-weight: 600;
+      font-size: 36px;
+    }
+    .h2 {
+      font-family: "Pretendard";
+      font-weight: 600;
+      font-size: 28px;
+    }
+    .b1 {
+      font-family: "Pretendard";
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .b2 {
+      font-family: "Pretendard";
+      font-weight: 500;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
   <p>This is "Default" font.</p>
-  <p>This is "Pretendard Bold" font.</p>
-  <p>This is "Roboto" font from google.</p>
+  <p class="roboto">This is "Roboto" font from google.</p>
+  <p class="pretendard-medium">This is "Pretendard-Medium" font.</p>
+  <p class="pretendard-semibold">This is "Pretendard-SemiBold" font.</p>
+  <p class="pretendard-variable">This is "Pretendard Variable" font.</p>
+
+  <p class="h1">Pretendard / SemiBold / 36px</p>
+  <p class="h2">Pretendard / SemiBold / 28px</p>
+  <p class="b1">Pretendard / SemiBold / 18px</p>
+  <p class="b2">Pretendard / Medium / 16px</p>
 </body>
