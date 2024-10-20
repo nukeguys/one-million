@@ -12,12 +12,16 @@
       word-break: break-all;
     }
     p:nth-of-type(3) {
+      word-break: keep-all;
+    }
+    p:nth-of-type(4) {
       word-break: break-word;
     }
   </style>
 </head>
 <body>
   <p>normal - this is very looooooooooooooong word</p>
-  <p>anywhere - this is very looooooooooooooong word</p>
+  <p>break-all - this is very looooooooooooooong word</p>
+  <p>keep-all - this is very looooooooooooooong word</p>
   <p>break-word - this is very looooooooooooooong word</p>
 </body>
