@@ -122,7 +122,7 @@ const son = {
 // 인사하기 실행시 this는 인사하기를 호출한 son을 가리킴.(son.이름, son.나이와 동일)
 son.인사하기(); // 안녕하세요, 손흥민입니다. 나이는 32살입니다.
 
-const park = son;
+const park = { ...son };
 park.이름 = "박지성";
 park.나이 = 43;
 // 인사하기 실행시 this는 인사하기를 호출한 park을 가리킴.(park.이름, park.나이와 동일)
